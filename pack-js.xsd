@@ -31,6 +31,34 @@
 		</xs:complexContent>
 	</xs:complexType>
 	
+	<xs:complexType name="moduleType">
+		<xs:complexContent>
+			<xs:extension base="baseType">
+                <xs:sequence>
+					<xs:element ref="files" maxOccurs="unbounded"/>
+                </xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	
+
+	<xs:element name="files">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="file" type="xs:string" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	<xs:key name="fileName">
+			<xs:selector xpath="file"/>
+			<xs:field xpath="."/>
+	</xs:key>
+	</xs:element>
+	<xs:simpleType name="fileNameType">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="(([A-Za-z0-9\-.])*([/])*)*"/>
+		</xs:restriction>
+	</xs:simpleType>	
+	
 	<xs:complexType name="baseType">
 		<xs:sequence>
 			<xs:element name="id" type="idType"/>
@@ -82,4 +110,4 @@
 		</xs:restriction>
 	</xs:simpleType>
 	
-	
+</xs:schema>
