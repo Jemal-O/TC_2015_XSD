@@ -62,7 +62,7 @@
 	<xs:complexType name="baseType">
 		<xs:sequence>
 			<xs:element name="id" type="idType"/>
-			<xs:element name="basePath" type="xs:string" minOccurs="0"/>
+			<xs:element name="basePath" type="basePathType" minOccurs="0"/>
 			<xs:element name="outputPath" type="outputPathType" minOccurs="0"/>
 			<xs:element name="compressionLevel" type="xs:string" minOccurs="0"/>
 			<xs:element ref="dependencies" minOccurs="0" maxOccurs="unbounded"/>
@@ -94,7 +94,7 @@
 	
 	<xs:simpleType name="basePathType">
 		<xs:restriction base="xs:string">
-			<xs:pattern value="([A-Za-z0-9\-]*([/])*)*"/>
+			<xs:pattern value="([A-Za-z0-9\-.]*([/])*)*"/>
 		</xs:restriction>
 	</xs:simpleType>
 
