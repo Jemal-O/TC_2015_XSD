@@ -9,7 +9,7 @@
 		</xs:complexType>	
 	
 	<xs:keyref name="modules" refer="idName">
-		<xs:selector xpath="module/dependencies"/>
+		<xs:selector xpath="module/dependencies|file/dependencies"/>
 		<xs:field xpath="dependency"/>
 	</xs:keyref>
 	
