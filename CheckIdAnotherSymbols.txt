@@ -1,0 +1,51 @@
+<packJSStructure>
+	<file>
+		<id>jquery-base</id>
+                <basePath>jquery-1.6.2.min.js</basePath>
+                 <outputPath>none</outputPath>
+                 <compressionLevel>dgdr</compressionLevel>
+		<uncompressedSrcName>jquery-1.6.2.js</uncompressedSrcName>
+		<compressedSrcName>jquery-1.6.2.min.js</compressedSrcName>
+        </file>
+	<file>
+		<id>jquery-ui*</id>
+		<basePath>lodash</basePath>
+		<uncompressedSrcName>lodash.js</uncompressedSrcName>
+		<compressedSrcName>lodash.min.js</compressedSrcName>
+	</file>
+        <file>
+		<id>jquery-ui</id>
+                <basePath>jquery/ui</basePath>
+		<dependencies>
+			<dependency>jquery-base</dependency>
+
+		</dependencies>
+		<uncompressedSrcName>jquery-ui-1.8.11.custom.js</uncompressedSrcName>
+		<compressedSrcName>jquery-ui-1.8.11.custom.min.js</compressedSrcName>
+	</file>
+<module>
+		<id>jquery-plugins</id>
+		<files>
+			<file>jquery-base</file>
+		</files>
+		
+	</module>
+<module>
+		<id>baseUtils</id>
+		<basePath>adsalespro/util</basePath>
+<dependencies>
+			
+			<dependency>lodash</dependency>
+		</dependencies>
+		<files>
+			<file>/jQuerySelectorUtils.js</file>
+			<file>/rfc3339date.js</file>
+			<file>/jsxml.js</file>
+			<file>/json/json2.min.js</file>
+			<file>/stringUtils.js</file>
+			<file>/deepLinkUtils.hhh.</file>
+		</files>
+		
+	</module>
+</packJSStructure>
+	
