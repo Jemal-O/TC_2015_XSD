@@ -35,7 +35,7 @@
 		<xs:complexContent>
 			<xs:extension base="baseType">
                 <xs:sequence>
-					<xs:element ref="files" maxOccurs="unbounded"/>
+					<xs:element ref="files"/>
                 </xs:sequence>
 			</xs:extension>
 		</xs:complexContent>
@@ -53,6 +53,7 @@
 			<xs:field xpath="."/>
 	</xs:key>
 	</xs:element>
+	
 	<xs:simpleType name="fileNameType">
 		<xs:restriction base="xs:string">
 			<xs:pattern value="(([A-Za-z0-9\-.])*([/])*)*"/>
@@ -65,7 +66,7 @@
 			<xs:element name="basePath" type="basePathType" minOccurs="0"/>
 			<xs:element name="outputPath" type="outputPathType" minOccurs="0"/>
 			<xs:element name="compressionLevel" type="xs:string" minOccurs="0"/>
-			<xs:element ref="dependencies" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="dependencies" minOccurs="0"/>
 			
 		</xs:sequence>
 	</xs:complexType>
