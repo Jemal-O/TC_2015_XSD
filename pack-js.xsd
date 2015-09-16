@@ -8,15 +8,15 @@
 			</xs:sequence>
 		</xs:complexType>	
 	
-	<xs:keyref name="modules" refer="idName">
-		<xs:selector xpath="module/dependencies|file/dependencies"/>
-		<xs:field xpath="dependency"/>
-	</xs:keyref>
-	
-	<xs:key name="idName">
-			<xs:selector xpath="module|file"/>
-			<xs:field xpath="id"/>
-	</xs:key>
+		<xs:key name="idKey">
+				<xs:selector xpath="module|file"/>
+				<xs:field xpath="id"/> 
+		</xs:key>	
+		
+		<xs:keyref name="filesRef" refer="idKey">
+			<xs:selector xpath="module/dependencies|file/dependencies"/>
+			<xs:field xpath="dependency"/>
+		</xs:keyref>
 	
 	</xs:element>
 	
