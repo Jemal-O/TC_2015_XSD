@@ -1,7 +1,7 @@
 <packJSStructure>
 	<file>
 		<id>jquery-base</id>
-                <basePath>/jquery-1.6.2.min.js</basePath>
+                <basePath>jquery-1.6.2.min.js</basePath>
                  <outputPath>NoNe</outputPath>
                  <compressionLevel>dgdr</compressionLevel>
 		<uncompressedSrcName>jquery-1.6.2.js</uncompressedSrcName>
@@ -17,7 +17,8 @@
 		<id>jquery-ui</id>
                 <basePath>jquery/ui</basePath>
 		<dependencies>
-			<dependency>jquery-base</dependency>
+			<dependency>lodash</dependency>
+
 
 		</dependencies>
 		<uncompressedSrcName>jquery-ui-1.8.11.custom.js</uncompressedSrcName>
@@ -39,11 +40,11 @@
 		</dependencies>
 		<files>
 			<file>/jQuerySelectorUtils.js</file>
-			<file>/rfc3339date.js</file>
+			<file>/jQuerySelectorUtils.js</file>
 			<file>/jsxml.js</file>
 			<file>/json/json2.min.js</file>
 			<file>/stringUtils.js</file>
-			<file>/deepLinkUtils.js</file>
+			<file>/deepLinkUtils.hhh.</file>>
 		</files>
 		
 	</module>

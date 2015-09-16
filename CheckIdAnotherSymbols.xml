@@ -1,14 +1,14 @@
 <packJSStructure>
 	<file>
 		<id>jquery-base</id>
-                <basePath>/jquery-1.6.2.min.js</basePath>
-                 <outputPath>NoNe</outputPath>
+                <basePath>jquery-1.6.2.min.js</basePath>
+                 <outputPath>none</outputPath>
                  <compressionLevel>dgdr</compressionLevel>
 		<uncompressedSrcName>jquery-1.6.2.js</uncompressedSrcName>
 		<compressedSrcName>jquery-1.6.2.min.js</compressedSrcName>
         </file>
 	<file>
-		<id>lodash</id>
+		<id>jquery-ui*</id>
 		<basePath>lodash</basePath>
 		<uncompressedSrcName>lodash.js</uncompressedSrcName>
 		<compressedSrcName>lodash.min.js</compressedSrcName>
@@ -35,7 +35,7 @@
 		<basePath>adsalespro/util</basePath>
 <dependencies>
 			
-			<dependency>lodash</dependency>
+			<dependency>jquery-base</dependency>
 		</dependencies>
 		<files>
 			<file>/jQuerySelectorUtils.js</file>
@@ -43,7 +43,7 @@
 			<file>/jsxml.js</file>
 			<file>/json/json2.min.js</file>
 			<file>/stringUtils.js</file>
-			<file>/deepLinkUtils.js</file>
+			<file>/deepLinkUtils.hhh.</file>
 		</files>
 		
 	</module>
